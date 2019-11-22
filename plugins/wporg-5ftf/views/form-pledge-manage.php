@@ -30,9 +30,14 @@ require __DIR__ . '/partial-result-messages.php';
 				type="submit"
 				id="5ftf-pledge-submit"
 				name="action"
-				value="<?php esc_attr_e( 'Update Pledge', 'wporg' ); ?>"
+				value="<?php esc_attr_e( 'Update Pledge', 'wporg-5ftf' ); ?>"
 			/>
 		</div>
+
+		<h2><?php esc_html_e( 'Contributors', 'wporg-5ftf' ); ?></h2>
+
+		<?php require get_views_path() . 'manage-contributors.php'; ?>
+
 	</form>
 
 <?php endif; ?>
